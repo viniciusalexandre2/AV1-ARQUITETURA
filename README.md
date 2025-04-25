@@ -76,6 +76,5 @@ Utilize uma ferramenta como [Postman](https://www.postman.com/) ou [Bruno](https
 - A classe `Produto` referencia `Categoria` com `@ManyToOne`.
 - O relacionamento está corretamente mapeado e persistido no banco de dados MariaDB.
 
-## Considerações Finais
-Este projeto foi desenvolvido como parte de uma atividade avaliativa da disciplina de Arquitetura de Microsserviços, com foco na prática de mapeamento de entidades, persistência com JPA, e exposição de APIs RESTful com Spring Boot.
+
 
