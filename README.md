@@ -47,7 +47,7 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MariaDBDialect
 
 ## Como Rodar o Projeto
 1. Clone o repositório para sua máquina.
-2. Abra o projeto com uma IDE (ex: VS Code, IntelliJ).
+2. Abra o projeto com o **Visual Studio Code (VS Code)**.
 3. Navegue até `LojaApplication.java`.
 4. Execute a aplicação clicando no botão "Run" ou utilizando o atalho da sua IDE.
 5. A aplicação estará rodando em: [http://localhost:8080](http://localhost:8080)
