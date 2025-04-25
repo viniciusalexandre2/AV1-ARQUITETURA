@@ -21,25 +21,40 @@ Este projeto tem como objetivo demonstrar o uso de relacionamento entre entidade
 - `LojaApplication.java`: Classe principal que inicia a aplicação.
 
 ## Configuração do Ambiente
-1. Instale o [XAMPP](https://www.apachefriends.org/index.html) e inicie o MariaDB.
-2. Crie o banco de dados `loja` com o seguinte comando SQL:
+### 1. Instalação do XAMPP e MariaDB
+- Instale o [XAMPP](https://www.apachefriends.org/index.html).
+- Abra o XAMPP Control Panel e ative os módulos Apache e MySQL.
+
+### 2. Criação do Banco de Dados
+- Clique em "Admin" no módulo MySQL do XAMPP para abrir o phpMyAdmin.
+- Crie um banco de dados com o nome `loja`:
 ```sql
 CREATE DATABASE loja;
 ```
-3. Atualize seu `application.properties` com as credenciais corretas:
+- Exemplo de como o banco de dados deve ficar:
+![Banco de dados XAMPP](imgav1/bancoav1.png)
+
+### 3. Configuração do application.properties
+Abra o arquivo `src/main/resources/application.properties` e configure conforme seu ambiente:
 ```properties
 spring.datasource.url=jdbc:mariadb://localhost:3306/loja
 spring.datasource.username=root
 spring.datasource.password=
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MariaDBDialect
 ```
 
 ## Como Rodar o Projeto
-1. Clone o repositório.
-2. Navegue até a pasta do projeto.
-3. Execute o projeto em uma IDE como VS Code ou IntelliJ.
-4. A aplicação iniciará na porta padrão (8080).
+1. Clone o repositório para sua máquina.
+2. Abra o projeto com uma IDE (ex: VS Code, IntelliJ).
+3. Navegue até `LojaApplication.java`.
+4. Execute a aplicação clicando no botão "Run" ou utilizando o atalho da sua IDE.
+5. A aplicação estará rodando em: [http://localhost:8080](http://localhost:8080)
+
+### Para acessar os dados diretamente:
+- Produtos: [http://localhost:8080/produtos](http://localhost:8080/produtos)
+- Categorias: [http://localhost:8080/categorias](http://localhost:8080/categorias)
 
 ## Testando os Endpoints
 Utilize uma ferramenta como [Postman](https://www.postman.com/) ou [Bruno](https://www.usebruno.com/) para testar os endpoints.
