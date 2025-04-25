@@ -31,7 +31,7 @@ Este projeto tem como objetivo demonstrar o uso de relacionamento entre entidade
 ```sql
 CREATE DATABASE loja;
 ```
-- Exemplo de como o banco de dados deve ficar:
+- A imagem abaixo mostra o banco de dados criado especificamente para este projeto:
 ![Banco de dados XAMPP](imgav1/bancoav1.png)
 
 ### 3. Configuração do application.properties
